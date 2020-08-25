@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="bird.jpg" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Form -->
+    <div class="container formwidth">
+        <h2 class="text-center margin">Membership Form</h2>
+        <form action="/action_page.php">
+            <h5>Name:</h5>
+            <hr>
+            <div class='row bottommargin'>
+                <div class="form-group col-lg-3">
+                    <label for="prefix">Prefix:</label>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle bg-white text-dark"
+                            data-toggle="dropdown">
+                            Select Prefix
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Dr.</a>
+                            <a class="dropdown-item" href="#">Mr.</a>
+                            <a class="dropdown-item" href="#">Mrs.</a>
+                            <a class="dropdown-item" href="#">Miss.</a>
+                            <a class="dropdown-item" href="#">Prof.</a>
+                            <a class="dropdown-item" href="#">Rev.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="first">First:</label>
+                    <input type="text" class="form-control" placeholder="Enter First Name" name="first">
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="middle">Middle:</label>
+                    <input type="text" class="form-control" placeholder="Enter Middle Name" name="middle">
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="last">Last:</label>
+                    <input type="text" class="form-control" placeholder="Enter Last Name" name="last">
+                </div>
+            </div>
+            <h5>Gender:</h5>
+            <hr>
+            <div class="row bottommargin form-group">
+                <div class="form-check-inline">
+                    <input type="radio" class="form-check-input form-control" type="checkbox" value=""
+                        id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check-inline ">
+                    <input type="radio" class="form-check-input form-control" type="checkbox" value=""
+                        id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <h5>Date Of Birth</h5>
+            <hr>
+            <div class="row bottommargin form-group">
+                <input type="date" class="form-control" id="birthday" name="birthday">
+            </div>
+            <h5>Mobile No:</h5>
+            <hr>
+            <div class="row bottommargin form-group">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-453-6782"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+
+            <h5>Email:</h5>
+            <hr>
+            <div class="row bottommargin form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </div>
+
+            <h5>Education:</h5>
+            <hr>
+            <div class="row bottommargin form-group">
+                <input type="text" class="form-control" name="education" placeholder="Enter your Education"
+                    pattern="a-z">
+            </div>
+
+            <h5>Profession:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" name="profession" placeholder="Enter your Profession"
+                    pattern="a-z">
+            </div>
+            <h5>Zipcode/Postal Code:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input id="zip" class="form-control" name="zip" type="text" inputmode="numeric"
+                    placeholder="Enter the Zipcode/postal code" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$"
+                    required>
+            </div>
+
+            <h5>Country:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the country" name="country">
+            </div>
+            <h5>State:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the state" name="state">
+            </div>
+
+            <h5>District:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the District" name="district">
+            </div>
+
+            <h5>Tahsil:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the Tahsil" name="tahsil">
+            </div>
+
+            <h5>Address:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the address line 1" name="address1"><br><br>
+                <input type="text" class="form-control" placeholder="Enter the address line 2" name="address2">
+            </div>
+            <h5> Permanent Address:</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the address line 1" name="paddress1"><br><br>
+                <input type="text" class="form-control" placeholder="Enter the address line 2" name="paddress2">
+            </div>
+            <h5>Loksabha Constituency</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the Loksabha Constituency" name="loksabha">
+            </div>
+
+            <h5>Vidhansabha Constituency</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the Vidhansabha Constituency"
+                    name="Vidhansabha">
+            </div>
+
+            <h5>Social/Political Contribution</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <input type="text" class="form-control" placeholder="Enter the Social/Political Contribution"
+                    name="socialcon">
+            </div>
+
+            <h5>How did you came to know about Namo Namo Morcha Bharat *</h5>
+            <hr>
+            <div class="form-group row bottommargin">
+                <select class="form-control" name="">
+                    <option value="fb">Facebook</option>
+                    <option value="Insta">Instagam</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="person">Person</option>
+                </select>
+            </div>
+
+            <h5>Aadhar No:</h5>
+            <hr>
+            <div class="row bottommargin form-group color">
+                <input type="tel" class="form-control" name="aadhar" name="phone" placeholder="1234-4537-6782"
+                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+            </div>
+
+            <h5>File Upload</h5>
+            <hr>
+            <div class="files form-group">
+                <input type="file" class="form-control" placeholder="" class="file-upload" multiple="" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
